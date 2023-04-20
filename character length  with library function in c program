@@ -1,0 +1,11 @@
+
+#include<stdio.h>
+int main()
+{
+  char str[]="Tarikul islam";
+  int sum;
+  sum=strlen(str);
+  printf("Length =%d\n",sum);
+  return 0;
+  }
+
