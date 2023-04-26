@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str[100]="I do programinG and because i love It!";
+    char str1[100];
+    int i,j,up=0,lo=0;
+
+
+    for(i=0;str[i]!='\0';i++)
+    {
+          if(str[i]>='a' && str[i]<='z')
+          {
+            up++;
+            str[i]=str[i]-32;
+          
+          }
+          else if(str[i]>='A' && str[i]<='Z')
+          {
+            lo++;
+            str[i]=str[i]+32;
+          
+          }
+          
+    }
+    printf("%s\n",str);
+    //  printf(" lower case =%d\n lower case =%d\n",lo,up);
+    //  printf(" lenth =%d\n",i);
+     
+    return 0;
+    
+}
