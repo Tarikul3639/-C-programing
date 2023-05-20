@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main()
+{
+    long long i;
+    int number;
+    int testcase;
+    
+    scanf("%d", &testcase);
+
+    for (int j = 0; j < testcase; j++)
+    {
+        long long factorial=1;
+
+        scanf("%d", &number);
+
+        if (number == 0)
+        {
+            printf("%d\n", 1);
+        }
+        else
+        {
+
+           for (i = 1; i <= number; i++)
+            {
+                factorial *= i;
+            }
+            printf("%llu\n", factorial);
+        }
+    }
+}
